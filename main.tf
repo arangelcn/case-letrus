@@ -8,14 +8,17 @@ terraform {
       version = "~> 5.0"
     }
   }
+
+  backend "s3" {
+    resource_group_name  = "rg-terraform-state"
+    storage_account_name = "danielgilterraformstate"
+    key                  = "pipeline-github/terraform.tfstate"
+  }
+
 }
 
-# provide AWS
 provider "aws" {
   region = "us-east-1"
-
-  access_key = "AKIAQEBCKATHQ5DJNCLN"
-  secret_key = "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"
 
   # set default tags to terraform managed resources
   default_tags {
@@ -23,5 +26,14 @@ provider "aws" {
       owner      = "antoniorangel"
       managed-by = "terraform"
     }
+  }
+}
+
+data "terraform_remote_state" "vpc" {
+  backend = "s3"
+  config = {
+    bucket = "danielgil-remote-state"
+    key    = "aws-vpc/terraform.tfstate"
+    region = "eu-central-1"
   }
 }

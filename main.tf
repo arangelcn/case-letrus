@@ -8,12 +8,6 @@ terraform {
     }
   }
 
-  backend "s3" {
-    resource_group_name  = "rg-terraform-state"
-    storage_account_name = "danielgilterraformstate"
-    key                  = "pipeline-github/terraform.tfstate"
-  }
-
 }
 
 provider "aws" {
@@ -25,14 +19,5 @@ provider "aws" {
       owner      = "antoniorangel"
       managed-by = "terraform"
     }
-  }
-}
-
-data "terraform_remote_state" "vpc" {
-  backend = "s3"
-  config = {
-    bucket = "danielgil-remote-state"
-    key    = "aws-vpc/terraform.tfstate"
-    region = "eu-central-1"
   }
 }

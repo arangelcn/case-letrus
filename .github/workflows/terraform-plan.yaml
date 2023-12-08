@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        sheell: bash
+        shell: bash
 
     steps:
       - name: Checkout

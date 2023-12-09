@@ -11,7 +11,10 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-1"
+
+  access_key = "AKIAQEBCKATH5DYEGKHS"
+  secret_key = "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"
 
   # set default tags to terraform managed resources
   default_tags {

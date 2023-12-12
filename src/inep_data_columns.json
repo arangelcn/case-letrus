@@ -1,1 +1,0 @@
-[{"column": "NU_ANO", "type": "int64"}, {"column": "CO_UF_ESCOLA", "type": "int64"}, {"column": "SG_UF_ESCOLA", "type": "object"}, {"column": "CO_MUNICIPIO_ESCOLA", "type": "int64"}, {"column": "NO_MUNICIPIO_ESCOLA", "type": "object"}]

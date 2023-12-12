@@ -16,16 +16,16 @@ Before you begin, ensure you have the following installed:
 
 The project is organized as follows:
 
-terraform-aws-project/
-│
-├── main.tf # Main Terraform configuration file
-├── variables.tf # Variable declarations
-├── datalake.tf # Datalake formation code
-├── glue.tf # Glue and Athena catalog formation code
-├── iam_groups.tf # Groups IAM setup
-├── s3.tf # IAM policys setup
-├── terraform.tfvars # Terraform variables file (gitignored)
-├── README.md # Project documentation
+   ```terraform-aws-project/
+   │
+   ├── main.tf # Main Terraform configuration file
+   ├── variables.tf # Variable declarations
+   ├── datalake.tf # Datalake formation code
+   ├── glue.tf # Glue and Athena catalog formation code
+   ├── iam_groups.tf # Groups IAM setup
+   ├── s3.tf # IAM policys setup
+   ├── terraform.tfvars # Terraform variables file (gitignored)
+   ├── README.md # Project documentation
 
 1. Clone the repository:
 

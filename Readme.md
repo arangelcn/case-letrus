@@ -30,10 +30,9 @@ The project is organized as follows:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/arangelcn/case-letrus.git
-   cd case-letrus
-
+    ```bash
+    git clone https://github.com/arangelcn/case-letrus.git
+    cd case-letrus
 
 2. Run
 

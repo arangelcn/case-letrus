@@ -16,8 +16,8 @@ variable "AWS_ACCESS_KEY_SECRET" { type= string }
 provider "aws" {
   region = "ap-southeast-1"
 
-  access_key = var.AWS_ACCESS_KEY_ID
-  secret_key = var.AWS_ACCESS_KEY_SECRET
+  access_key = "AKIAQEBCKATHVDBCMN6J"
+  secret_key = "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"
 
   # set default tags to terraform managed resources
   default_tags {

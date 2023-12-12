@@ -16,6 +16,7 @@ Before you begin, ensure you have the following installed:
 
 The project is organized as follows:
 
+```plaintext
 terraform-aws-project/
 │
 ├── main.tf # Main Terraform configuration file
@@ -31,7 +32,7 @@ terraform-aws-project/
 
    ```bash
    git clone https://github.com/arangelcn/case-letrus.git
-   cd case-letrus```
+   cd case-letrus
 
 
 2. Run

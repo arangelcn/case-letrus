@@ -40,3 +40,8 @@ terraform-aws-project/
 - terraform validate
 - terraform plan
 - terraform apply
+
+
+3. Configuração na AWS 
+
+- Para executar todos os recursos é necessário criar permissão no Lake Formation para o bucket inep. 

@@ -1,16 +1,4 @@
-# Definindo Grupos
-variable "data_engineer_group_arn" {
-  type    = string
-  default = "arn:aws:iam::008661894351:group/data-eng"
-}
-
-variable "data_sci_group_arn" {
-  type    = string
-  default = "arn:aws:iam::008661894351:group/data-science"
-}
-
 #============================
-
 # Definindo local AWS
 variable "region" {
   type    = string
@@ -22,17 +10,17 @@ variable "region" {
 # Definindo zonas do datalake
 variable "raw_data_bucket" {
   type    = string
-  default = "raw-datalake-prod"
+  default = "raw-lake-prod"
 }
 
 variable "processed_data_bucket" {
   type    = string
-  default = "processed-datalake-prod"
+  default = "processed-lake-prod"
 }
 
 variable "curated_data_bucket" {
   type    = string
-  default = "curated-datalake-prod"
+  default = "curated-lake-prod"
 }
 
 

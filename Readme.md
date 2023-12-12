@@ -27,6 +27,7 @@ The project is organized as follows:
    ├── terraform.tfvars # Terraform variables file (gitignored)
    ├── README.md # Project documentation
 
+
 1. Clone the repository:
 
    ```bash

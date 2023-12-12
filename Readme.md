@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed:
 
 The project is organized as follows:
 
-   ```
+   ```bash
    terraform-aws-project/
    ├── main.tf # Main Terraform configuration file
    ├── variables.tf # Variable declarations

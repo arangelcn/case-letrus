@@ -18,7 +18,6 @@ The project is organized as follows:
 
     ```plaintext
     terraform-aws-project/
-    │
     ├── main.tf # Main Terraform configuration file
     ├── variables.tf # Variable declarations
     ├── datalake.tf # Datalake formation code

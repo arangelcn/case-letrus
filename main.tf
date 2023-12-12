@@ -10,9 +10,6 @@ terraform {
 
 }
 
-variable "AWS_ACCESS_KEY_ID" { type= string } 
-variable "AWS_ACCESS_KEY_SECRET" { type= string } 
-
 provider "aws" {
   region = "ap-southeast-1"
 

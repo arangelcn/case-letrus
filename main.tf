@@ -1,6 +1,5 @@
 # basic terraform config for AWS
 terraform {
-  required_version = ">=1.3.0"
 
   required_providers {
     aws = {
@@ -8,14 +7,14 @@ terraform {
       version = "~> 5.0"
     }
   }
+
 }
 
-# provide AWS
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-1"
 
-  access_key = "AKIAQEBCKATHQ5DJNCLN"
-  secret_key = "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"
+  access_key = "AKIAQEBCKATHVDBCMN6J"
+  secret_key = "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"
 
   # set default tags to terraform managed resources
   default_tags {
